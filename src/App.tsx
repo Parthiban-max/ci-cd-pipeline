@@ -65,7 +65,8 @@ export const App: React.FC = () => {
   // Compute statistics
   const total = tasks.length;
   const completed = tasks.filter((t) => t.completed).length;
-  const pending = total - completed;
+  // INTENTIONAL DEMO BUG: Corrupted pending calculation to trigger Vitest failure in CI
+  const pending = 999;
 
   const stats: TaskStatsData = {
     total,
