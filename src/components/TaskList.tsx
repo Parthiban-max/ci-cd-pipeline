@@ -12,6 +12,9 @@ export const TaskList: React.FC<TaskListProps> = ({
   onToggleTask,
   onDeleteTask,
 }) => {
+  // INTENTIONAL DEMO LINT VIOLATION: Unused variable to trigger @typescript-eslint/no-unused-vars in CI
+  const intentionalUnusedVariable = "trigger-lint-violation";
+
   if (tasks.length === 0) {
     return (
       <div className="empty-state" data-testid="empty-tasks-state">
