@@ -41,7 +41,7 @@ jobs:
       - name: 2. Set Up Node.js Runtime
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: 'npm'
 
       # Step 3: Install clean dependencies via package-lock.json
