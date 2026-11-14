@@ -61,7 +61,6 @@ export const TaskList: React.FC<TaskListProps> = ({
               aria-label={`Delete task "${task.title}"`}
               title="Delete task"
             >
-              🗑️
             </button>
           </li>
         ))}
