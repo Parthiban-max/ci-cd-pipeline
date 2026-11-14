@@ -6,7 +6,6 @@ interface TaskListProps {
   onToggleTask: (id: string) => void;
   onDeleteTask: (id: string) => void;
 }
-
 export const TaskList: React.FC<TaskListProps> = ({
   tasks,
   onToggleTask,
